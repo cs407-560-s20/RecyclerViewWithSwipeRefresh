@@ -14,7 +14,7 @@ class MyRecyclerAdapter(private val contacts: ArrayList<Contact>) : RecyclerView
 
     var count = 0
     private val TAG = "MyRecyclerAdapter"
-    
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         // Inflate a layout from our XML (row_item.XML) and return the holder
 
@@ -37,7 +37,7 @@ class MyRecyclerAdapter(private val contacts: ArrayList<Contact>) : RecyclerView
         // The URL must be https since Android does not allow your app to connect http (not secure)
         // If you want to connect a http address, add android:usesCleartextTraffic="true"
         // to your Manifest file somewhere in  <application ...   >
-        Picasso.get().load("https://i.imgur.com/DvpvklR.png").into(holder.profileImage)
+        //Picasso.get().load("https://i.imgur.com/DvpvklR.png").into(holder.profileImage)
         Picasso.get().load(currentItem.profileImage).into(holder.profileImage)
 
 
